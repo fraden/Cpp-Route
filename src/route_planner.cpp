@@ -108,8 +108,9 @@ void RoutePlanner::AStarSearch() {
     RouteModel::Node *current_node = nullptr;
 
     // TODO: Implement your solution here.
-    current_node -> visited=true;
+    
     current_node = start_node;
+    current_node -> visited=true;
     
     current_node -> h_value=CalculateHValue(current_node);
 
